@@ -1,0 +1,66 @@
+<div class="row">
+	<div class="col-md-12">
+	  <div class="card">
+		<div class="card-header card-header-warning">
+		  <h4 class="card-title">Filtro</h4>		 
+		</div>
+		<div class="card-body">
+		  <form>
+			<div class="row">			  
+			  <div class="col-md-4">
+				<div class="form-group bmd-form-group">
+				  <input type="text" ng-model="searchtxt.name" class="form-control" placeholder="Name">
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="form-group bmd-form-group">
+				  <input type="text" ng-model="searchtxt.username" class="form-control" placeholder="User Name">
+				</div>
+			  </div>
+			  <div class="col-md-">
+				<div class="form-group bmd-form-group">
+				  <input type="text"ng-model="searchtxt.phone" class="form-control" placeholder="Teléfono">
+				</div>
+			  </div>
+			</div>
+			<div class="clearfix"></div>
+		  </form>
+		</div>
+	  </div>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+	  <div class="card">
+		<div class="card-header card-header-primary">
+		  <h4 class="card-title ">Usuiarios</h4>
+		  <p class="card-category">Lista de usuarios</p>
+		</div>
+		<div class="card-body">
+		  <div class="table-responsive">
+			<table class="table">
+				<thead class="text-primary">
+					<tr>
+						<th>Id</th>
+		  				<th>Nombre</th>
+		  				<th>Phone</th>
+		  				<th>UserName</th>
+			  		</tr>
+				</thead>
+			  <tbody>
+				<tr ng-repeat="user in users | filter : searchtxt">
+					<td>{{user.id}}</td>
+					<td>{{user.name}}</td>
+					<td>{{user.phone}}</td>
+					<td>{{user.username}}</td>				  
+				</tr>		
+			  </tbody>
+			</table>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+  </div>
+

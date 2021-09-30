@@ -1,0 +1,37 @@
+
+	
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+    <div class="card-header card-header-warning">
+      <h4 class="card-title">Guardar post</h4>		 
+    </div>
+    <div class="card-body">
+      <form name="form" class="css-form" novalidate ng-submit="form.$valid && update(post)" >
+        <div class="row">		
+          <div class="col-md-6">
+            <div class="form-group bmd-form-group">
+              <input type="text" class="form-control" ng-model="post.title" name="utitle" required="" placeholder="Title"/>    
+              <div ng-show="form.$submitted || form.utitle.$touched">
+                <div ng-show="form.utitle.$error.required">Titlerequired.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group bmd-form-group">
+              <input type="text" class="form-control" ng-model="post.body" name="ubody" required="" placeholder="Body" />
+              <div ng-show="form.$submitted || form.ubody.$touched">
+                <div ng-show="form.ubody.$error.required">Body is required.</div>
+              </div>
+            </div>
+          </div>
+
+ 
+        <input type="submit" class="btn btn-primary pull-right" value="Save" />
+        <div class="clearfix"></div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>	

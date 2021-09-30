@@ -1,0 +1,657 @@
+@import "../lib/material-dashboard/assets/scss/material-dashboard/variables/_colors"; //Añadimos la paleta de colores de bootstrap
+
+// Defininición de colores
+
+$brand-primary: #002855; //Modificamos el color para el $brand-primary
+$brand-primary-active: #426186; //Como el color primary es demasiado oscuro, usaremos otro para su "active"
+$brand-info: #5582ab; //Modificamos el color para el $brand-info
+$brand-success: $green-500;
+$brand-warning: $orange-500;
+$brand-danger: $red-500;
+$brand-rose: $pink-500;
+$brand-inverse: $black-color;
+$brand-cyan: #00bfa5; //Creamos el color $brand-cyan
+$brand-alter: #796ad4; //Creamos el color $brand-alter
+$light-gray: #bebebe;
+
+@import "../lib/material-dashboard/assets/scss/material-dashboard"; //Importamos todos los estilos de bootstrap para recompilarlos
+
+/**
+ * Datacolor primary
+ */
+.sidebar[data-color=primary] li.active > a {
+  background-color: $brand-primary;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(darken($brand-primary, 5%), 0.4);
+}
+
+/**
+* Configuración del datatable
+*/
+.dataTable > tbody > tr > td {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+/**
+ * Estilos para darle efecto de olas a los componentes
+ */
+.waves-effect.waves-light-gray .waves-ripple {
+  background: rgba($light-gray, 0.4);
+  background: -webkit-radial-gradient(rgba($light-gray, 0.2) 0, rgba($light-gray, 0.3) 40%, rgba($light-gray, 0.4) 50%, rgba($light-gray, 0.5) 60%, rgba($light-gray, 0) 70%);
+  background: -o-radial-gradient(rgba($light-gray, 0.2) 0, rgba($light-gray, 0.3) 40%, rgba($light-gray, 0.4) 50%, rgba($light-gray, 0.5) 60%, rgba($light-gray, 0) 70%);
+  background: -moz-radial-gradient(rgba($light-gray, 0.2) 0, rgba($light-gray, 0.3) 40%, rgba($light-gray, 0.4) 50%, rgba($light-gray, 0.5) 60%, rgba($light-gray, 0) 70%);
+  background: radial-gradient(rgba($light-gray, 0.2) 0, rgba($light-gray, 0.3) 40%, rgba($light-gray, 0.4) 50%, rgba($light-gray, 0.5) 60%, rgba($light-gray, 0) 70%);
+}
+.waves-effect.waves-classic.waves-light-gray .waves-ripple {
+  background: rgba($light-gray, 0.4);
+}
+
+/**
+ * Estilos nuevos para los botones, cards y fondos
+ */
+.card-header-primary .card-icon,
+.card-header-primary .card-text,
+.card-header-primary:not(.card-header-icon):not(.card-header-text),
+.bg-primary,
+.card-rotate.bg-primary .front,
+.card-rotate.bg-primary .back{
+  background: $brand-primary !important;
+}
+
+.bg-active-primary .active {
+  background: $brand-primary !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba($brand-primary, 0.4) !important;
+}
+
+.bg-active-primary a:active {
+  color: #FFF !important;
+  background: $brand-primary !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba($brand-primary, 0.4) !important;
+}
+
+.bg-active-primary .active {
+  background: $brand-primary !important;
+  box-shadow: 0 2px 2px 0 rgba($brand-primary, 0.14), 0 3px 1px -2px rgba($brand-primary, 0.2), 0 1px 5px 0 rgba($brand-primary, 0.12);
+}
+
+.bg-active-info .active {
+  background: $brand-info !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 40, 85, 0.4) !important;
+}
+
+.bg-active-info a:active {
+  color: #FFF !important;
+  background: $brand-info !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba($brand-info, 0.4) !important;
+}
+
+.bg-active-info .active {
+  background: $brand-info !important;
+  box-shadow: 0 2px 2px 0 rgba($brand-info, 0.14), 0 3px 1px -2px rgba($brand-info, 0.2), 0 1px 5px 0 rgba($brand-info, 0.12);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
+    background-color: lighten($brand-primary-active, 2%) !important;
+    border-color: $brand-primary-active !important;
+}
+.btn.btn-primary:hover {
+  color: #fff;
+  background-color: darken($brand-primary-active, 6%);
+  border-color: darken($brand-primary-active, 8%);
+}
+.btn.btn-primary:focus, .btn.btn-primary.focus, .btn.btn-primary:hover {
+  color: #fff;
+  background-color: darken($brand-primary-active, 6%);
+  border-color: darken($brand-primary-active, 8%);
+}
+
+.card-header-info .card-icon,
+.card-header-info .card-text,
+.card-header-info:not(.card-header-icon):not(.card-header-text),
+.bg-info,
+.card-rotate.bg-info .front,
+.card-rotate.bg-info .back{
+  background: linear-gradient(60deg, lighten($brand-info, 8%), $brand-info) !important;
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle{
+    background-color: darken($brand-info, 10%) !important;
+    border-color: darken($brand-info, 15%) !important;
+}
+
+.card-header-success .card-icon,
+.card-header-success .card-text,
+.card-header-success:not(.card-header-icon):not(.card-header-text),
+.bg-success,
+.card-rotate.bg-success .front,
+.card-rotate.bg-success .back{
+  background: linear-gradient(60deg, lighten($brand-success, 8%), $brand-success) !important;
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle{
+    background-color: darken($brand-info, 10%) !important;
+    border-color: darken($brand-info, 15%) !important;
+}
+
+.card-header-warning .card-icon,
+.card-header-warning .card-text,
+.card-header-warning:not(.card-header-icon):not(.card-header-text),
+.bg-warning,
+.card-rotate.bg-warning .front,
+.card-rotate.bg-warning .back{
+  background: linear-gradient(60deg, lighten($brand-warning, 8%), $brand-warning) !important;
+}
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle{
+    background-color: darken($brand-warning, 10%) !important;
+    border-color: darken($brand-warning, 15%) !important;
+}
+
+.card-header-danger .card-icon,
+.card-header-danger .card-text,
+.card-header-danger:not(.card-header-icon):not(.card-header-text),
+.bg-danger,
+.card-rotate.bg-danger .front,
+.card-rotate.bg-danger .back{
+  background: linear-gradient(60deg, lighten($brand-danger, 8%), $brand-danger) !important;
+}
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle{
+    background-color: darken($brand-danger, 10%) !important;
+    border-color: darken($brand-danger, 15%) !important;
+}
+
+.card-header-rose .card-icon,
+.card-header-rose .card-text,
+.card-header-rose:not(.card-header-icon):not(.card-header-text),
+.bg-rose,
+.card-rotate.bg-rose .front,
+.card-rotate.bg-rose .back{
+  background: linear-gradient(60deg, lighten($brand-rose, 8%), $brand-rose) !important;
+}
+.btn-rose:not(:disabled):not(.disabled):active, .btn-rose:not(:disabled):not(.disabled).active, .show > .btn-rose.dropdown-toggle{
+    background-color: darken($brand-rose, 10%) !important;
+    border-color: darken($brand-rose, 15%) !important;
+}
+
+.card-header-cyan .card-icon,
+.card-header-cyan .card-text,
+.card-header-cyan:not(.card-header-icon):not(.card-header-text),
+.bg-cyan,
+.card-rotate.bg-cyan .front,
+.card-rotate.bg-cyan .back{
+  background: linear-gradient(60deg, lighten($brand-cyan, 8%), $brand-cyan) !important;
+}
+.text-cyan {
+  color: $brand-cyan !important;
+}
+.btn.btn-cyan {
+  color: #fff;
+  background-color: $brand-cyan;
+  border-color: $brand-cyan;
+  box-shadow: 0 2px 2px 0 rgba($brand-cyan, 0.14), 0 3px 1px -2px rgba($brand-cyan, 0.2), 0 1px 5px 0 rgba($brand-cyan, 0.12);
+}
+.btn.btn-cyan:hover {
+  color: #fff;
+  background-color: darken($brand-cyan, 6%);
+  border-color: darken($brand-cyan, 8%);
+}
+.btn.btn-cyan:focus, .btn.btn-cyan.focus, .btn.btn-cyan:hover {
+  color: #fff;
+  background-color: darken($brand-cyan, 6%);
+  border-color: darken($brand-cyan, 6%);
+}
+.btn.btn-cyan:active, .btn.btn-cyan.active, .open > .btn.btn-cyan.dropdown-toggle, .show > .btn.btn-cyan.dropdown-toggle {
+  color: #fff;
+  background-color: darken($brand-cyan, 6%);
+  border-color: darken($brand-cyan, 6%);
+  box-shadow: 0 2px 2px 0 rgba($brand-cyan, 0.14), 0 3px 1px -2px rgba($brand-cyan, 0.2), 0 1px 5px 0 rgba($brand-cyan, 0.12);
+}
+.btn.btn-cyan:active:hover, .btn.btn-cyan:active:focus, .btn.btn-cyan:active.focus, .btn.btn-cyan.active:hover, .btn.btn-cyan.active:focus, .btn.btn-cyan.active.focus, .open > .btn.btn-cyan.dropdown-toggle:hover, .open > .btn.btn-cyan.dropdown-toggle:focus, .open > .btn.btn-cyan.dropdown-toggle.focus, .show > .btn.btn-cyan.dropdown-toggle:hover, .show > .btn.btn-cyan.dropdown-toggle:focus, .show > .btn.btn-cyan.dropdown-toggle.focus {
+  color: #fff;
+  background-color: darken($brand-cyan, 6%);
+  border-color: black;
+}
+.open > .btn.btn-cyan.dropdown-toggle.bmd-btn-icon {
+  color: inherit;
+  background-color: $brand-cyan;
+}
+.open > .btn.btn-cyan.dropdown-toggle.bmd-btn-icon:hover {
+  background-color: darken($brand-cyan, 6%);
+}
+.btn.btn-cyan.disabled:focus, .btn.btn-cyan.disabled.focus, .btn.btn-cyan:disabled:focus, .btn.btn-cyan:disabled.focus {
+  background-color: $brand-cyan;
+  border-color: $brand-cyan;
+}
+.btn.btn-cyan.disabled:hover, .btn.btn-cyan:disabled:hover {
+  background-color: $brand-cyan;
+  border-color: $brand-cyan;
+}
+.btn.btn-cyan:focus, .btn.btn-cyan:active, .btn.btn-cyan:hover {
+  box-shadow: 0 14px 26px -12px rgba($brand-cyan, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($brand-cyan, 0.2);
+}
+.btn.btn-cyan.btn-link {
+  background-color: transparent;
+  color: $brand-cyan;
+  box-shadow: none;
+}
+.btn.btn-cyan.btn-link:hover, .btn.btn-cyan.btn-link:focus, .btn.btn-cyan.btn-link:active {
+  background-color: transparent;
+  color: $brand-cyan;
+}
+
+.card-header-alter .card-icon,
+.card-header-alter .card-text,
+.card-header-alter:not(.card-header-icon):not(.card-header-text),
+.bg-alter,
+.card-rotate.bg-alter .front,
+.card-rotate.bg-alter .back{
+  background: linear-gradient(60deg, lighten($brand-alter, 8%), $brand-alter);
+}
+.text-alter {
+  color: $brand-alter !important;
+}
+.btn.btn-alter {
+  color: #fff;
+  background-color: $brand-alter;
+  border-color: $brand-alter;
+  box-shadow: 0 2px 2px 0 rgba($brand-alter, 0.14), 0 3px 1px -2px rgba($brand-alter, 0.2), 0 1px 5px 0 rgba($brand-alter, 0.12);
+}
+.btn.btn-alter:hover {
+  color: #fff;
+  background-color: darken($brand-alter, 6%);
+  border-color: darken($brand-alter, 6%);
+}
+.btn.btn-alter:focus, .btn.btn-alter.focus, .btn.btn-alter:hover {
+  color: #fff;
+  background-color: darken($brand-alter, 6%);
+  border-color: darken($brand-alter, 6%);
+}
+.btn.btn-alter:active, .btn.btn-alter.active, .open > .btn.btn-alter.dropdown-toggle, .show > .btn.btn-alter.dropdown-toggle {
+  color: #fff;
+  background-color: darken($brand-alter, 6%);
+  border-color: darken($brand-alter, 8%);
+  box-shadow: 0 2px 2px 0 rgba($brand-alter, 0.14), 0 3px 1px -2px rgba($brand-alter, 0.2), 0 1px 5px 0 rgba($brand-alter, 0.12);
+}
+.btn.btn-alter:active:hover, .btn.btn-alter:active:focus, .btn.btn-alter:active.focus, .btn.btn-alter.active:hover, .btn.btn-alter.active:focus, .btn.btn-alter.active.focus, .open > .btn.btn-alter.dropdown-toggle:hover, .open > .btn.btn-alter.dropdown-toggle:focus, .open > .btn.btn-alter.dropdown-toggle.focus, .show > .btn.btn-alter.dropdown-toggle:hover, .show > .btn.btn-alter.dropdown-toggle:focus, .show > .btn.btn-alter.dropdown-toggle.focus {
+  color: #fff;
+  background-color: darken($brand-alter, 6%);
+  border-color: black;
+}
+.open > .btn.btn-alter.dropdown-toggle.bmd-btn-icon {
+  color: inherit;
+  background-color: $brand-alter;
+}
+.open > .btn.btn-alter.dropdown-toggle.bmd-btn-icon:hover {
+  background-color: darken($brand-alter, 6%);
+}
+.btn.btn-alter.disabled:focus, .btn.btn-alter.disabled.focus, .btn.btn-alter:disabled:focus, .btn.btn-alter:disabled.focus {
+  background-color: $brand-alter;
+  border-color: $brand-alter;
+}
+.btn.btn-alter.disabled:hover, .btn.btn-alter:disabled:hover {
+  background-color: $brand-alter;
+  border-color: $brand-alter;
+}
+.btn.btn-alter:focus, .btn.btn-alter:active, .btn.btn-alter:hover {
+  box-shadow: 0 14px 26px -12px rgba($brand-alter, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($brand-alter, 0.2);
+}
+.btn.btn-alter.btn-link {
+  background-color: transparent;
+  color: $brand-alter;
+  box-shadow: none;
+}
+.btn.btn-alter.btn-link:hover, .btn.btn-alter.btn-link:focus, .btn.btn-alter.btn-link:active {
+  background-color: transparent;
+  color: $brand-alter;
+}
+
+.text-default {
+  color: $light-gray !important;
+}
+
+/**
+* Estilo para los input radios
+*/
+.custom-radio {
+  
+  div {
+    display: inline-block;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    + label {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+
+      span {
+        position: absolute;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 10%;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        line-height: 22px;
+    
+        img {
+          opacity: 0;
+          transition: all .3s ease;
+          user-select: none;
+        }
+      }
+    }
+
+    &.approved + label span {
+      background-color: #fff;
+    }
+
+    &.reproved + label span {
+      background-color: #fff;
+    }
+    
+    &.approved:checked + label span {
+      background-color: $brand-success;
+    }
+    
+    &.reproved:checked + label span {
+      background-color: $brand-danger;
+    }
+
+    &:checked + label span img {
+      opacity: 1;
+    }
+
+    &:checked + label span::before {
+      content: '';
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .25);
+      position: absolute;
+      box-sizing: border-box;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 1px;
+      height: 1px;
+      animation: custom-ripple .4s ease;
+    }
+
+  }
+
+}
+
+/**
+* Estilo para los input checkbox
+*/
+.custom-checkbox {
+  
+  div {
+    display: inline-block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    + label {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+
+      span {
+        position: absolute;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 10%;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        line-height: 22px;
+    
+        img {
+          opacity: 0;
+          transition: all .3s ease;
+          user-select: none;
+        }
+      }
+    }
+
+    &.checkbox-primary + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-primary:checked + label span {
+      background-color: $brand-primary;
+    }
+
+    &.checkbox-success + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-success:checked + label span {
+      background-color: $brand-success;
+    }
+
+    &.checkbox-warning + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-warning:checked + label span {
+      background-color: $brand-warning;
+    }
+
+    &.checkbox-danger + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-danger:checked + label span {
+      background-color: $brand-danger;
+    }
+
+    &.checkbox-cyan + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-cyan:checked + label span {
+      background-color: $brand-cyan;
+    }
+
+    &.checkbox-alter + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-alter:checked + label span {
+      background-color: $brand-alter;
+    }
+
+    &.checkbox-rose + label span {
+      background-color: #fff;
+    }
+
+    &.checkbox-rose:checked + label span {
+      background-color: $brand-rose;
+    }
+
+    &:checked + label span img {
+      opacity: 1;
+    }
+
+    &:checked + label span::before {
+      content: '';
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .25);
+      position: absolute;
+      box-sizing: border-box;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 1px;
+      height: 1px;
+      animation: custom-ripple .4s ease;
+    }
+
+  }
+
+}
+
+/**
+* Estilo para los input checkbox (toggle)
+*/
+.checkbox-toggle input[type="checkbox"]{
+  display:none;
+}
+
+.checkbox-toggle input[type="checkbox"]:checked + .custom-toggle {
+  &.toggle-primary:before {
+    background: mix($light-gray, $brand-primary, 75%);
+  }
+
+  &.toggle-primary span{
+    background: $brand-primary;
+    box-shadow: 0 3px 8px rgba($brand-primary,.2);
+  }
+
+  &.toggle-info:before {
+    background: mix($light-gray, $brand-info, 75%);
+  }
+
+  &.toggle-info span{
+    background: $brand-info;
+    box-shadow: 0 3px 8px rgba($brand-info,.2);
+  }
+
+  &.toggle-success:before {
+    background: mix($light-gray, $brand-success, 75%);
+  }
+
+  &.toggle-success span{
+    background: $brand-success;
+    box-shadow: 0 3px 8px rgba($brand-success,.2);
+  }
+
+  &.toggle-warning:before {
+    background: mix($light-gray, $brand-warning, 75%);
+  }
+
+  &.toggle-warning span{
+    background: $brand-warning;
+    box-shadow: 0 3px 8px rgba($brand-warning,.2);
+  }
+
+  &.toggle-danger:before {
+    background: mix($light-gray, $brand-danger, 75%);
+  }
+
+  &.toggle-danger span{
+    background: $brand-danger;
+    box-shadow: 0 3px 8px rgba($brand-danger,.2);
+  }
+
+  &.toggle-cyan:before {
+    background: mix($light-gray, $brand-cyan, 75%);
+  }
+
+  &.toggle-cyan span{
+    background: $brand-cyan;
+    box-shadow: 0 3px 8px rgba($brand-cyan,.2);
+  }
+
+  &.toggle-alter:before {
+    background: mix($light-gray, $brand-alter, 75%);
+  }
+
+  &.toggle-alter span{
+    background: $brand-alter;
+    box-shadow: 0 3px 8px rgba($brand-alter,.2);
+  }
+
+  &.toggle-rose:before {
+    background: mix($light-gray, $brand-rose, 75%);
+  }
+
+  &.toggle-rose span{
+    background: $brand-rose;
+    box-shadow: 0 3px 8px rgba($brand-rose,.2);
+  }
+
+  span {
+    transform: translateX(20px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before {
+      transform: scale(0.8);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+  }
+}
+
+.custom-toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0,0,0);
+  &:before {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 34px;
+    height: 14px;
+    display: block;
+    background: $light-gray;
+    border-radius: 8px;
+    transition: background .2s ease;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba($light-gray,.5);
+    transition: all .2s ease;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      margin: -18px;
+      width: 56px;
+      height: 56px;
+      background: rgba($brand-primary,.5);
+      border-radius: 50%;
+      transform: scale(0);
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes custom-ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(50, 50);
+  }
+}
+
+@import "bootstrap-select/bootstrap-select.scss"; //Añadimos los estilos para el bootstrap-select
+@import "datetimepicker/datetimepicker.scss"; //Añadimos los estilos para el datetimepicker

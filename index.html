@@ -1,0 +1,185 @@
+<html lang="en" class="perfect-scrollbar-on" ng-app='angularRoutingApp'>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>
+		Prueba Técnica Yeferson Sossa
+		</title>
+		<!-- Tipo de letra de google roboto, documentación: https://fonts.google.com/specimen/Roboto -->
+		<link rel="stylesheet" type="text/css" href="resources/lib/roboto-fontface/css/roboto/roboto-fontface.css" />
+
+		<!-- Iconos de Font Awesome versión 4.7.0, documentación: https://fontawesome.com/v4.7.0/icons -->
+		<!-- <link rel="stylesheet" href="resources/lib/Font-Awesome/css/font-awesome.min.css" /> -->
+		<link rel="stylesheet" href="resources/lib/fontawesome-free/css/all.min.css" />
+		<!-- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" /> -->
+
+		<!-- Iconos de Material design, documentación: https://jossef.github.io/material-design-icons-iconfont -->
+		<link rel="stylesheet" href="resources/lib/material-design-icons-iconfont/dist/material-design-icons.css" />
+
+		<!-- Respositorio de animaciones personalizadas, documentación: https://github.com/daneden/animate.css -->
+		<link rel="stylesheet" href="resources/lib/animate.css/animate.min.css">
+
+		<!-- Material Dashboard CSS, documentación: https://demos.creative-tim.com/material-dashboard/docs/2.0/getting-started/introduction.html -->
+		<link rel="stylesheet" href="resources/css/material-dashboard.css">
+
+		
+		<!-- CSS personalizado -->
+		<link rel="stylesheet" href="resources/css/custom-theme.css">
+	</head>
+  
+  <body class="" cz-shortcut-listen="true" ng-controller='mainController'>
+	
+	<div class="wrapper ">
+	  <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+		
+		<div class="sidebar-wrapper ps-container ps-theme-default" >
+		  <ul class="nav">
+			<li class="nav-item active  ">
+			  <a class="nav-link" href="#">
+				<i class="material-icons">home</i>
+				<p>Inicio</p>
+			  </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#usuarios">
+				  <i class="material-icons">person</i>
+				  <p>usuarios</p>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#albunes">
+				  <i class="material-icons">library_books</i>
+				  <p>Albunes</p>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#posts">
+				  <i class="material-icons">content_paste</i>
+				  <p>Publicaciones</p>
+				</a>
+			  </li>
+			
+		
+		  </ul>
+			<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+				<div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+			</div>
+			<div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+				<div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+			</div>	
+		</div>
+	  	<div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg) "></div>
+	</div>
+	<div class="main-panel ps-container ps-theme-default ps-active-y" data-ps-id="286be797-7535-8c39-6ee4-9c709f4093fa">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+		  <div class="container-fluid">
+			<div class="navbar-wrapper">
+			  <a class="navbar-brand" href="javascript:;">Prueba Técnica</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="navbar-toggler-icon icon-bar"></span>
+			  <span class="navbar-toggler-icon icon-bar"></span>
+			  <span class="navbar-toggler-icon icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end">			  
+			  
+			</div>
+		  </div>
+		</nav>
+		<!-- End Navbar -->
+		<div class="content">
+		  <div class="container-fluid">
+			<div ng-view></div>
+		  </div>
+		</div>
+		<footer class="footer">
+		  <div class="container-fluid">
+			<nav class="float-left">
+			  <ul>
+				<li>
+				  <a href="#">
+					Yeferson Sossa
+				  </a>
+				</li>
+			  </ul>
+			</nav>
+			<div class="copyright float-right">
+			  ©
+			  <script>
+				document.write(new Date().getFullYear())
+			  </script>2021, made with <i class="material-icons">Yeferson Sossa</i> 
+			</div>
+		  </div>
+		</footer>
+	</div>
+</div>
+
+
+	
+		<!-- Archivos principales de Material Dashboard, documentación: https://demos.creative-tim.com/material-dashboard/docs/2.0/getting-started/introduction.html -->
+		<script src="resources/lib/material-dashboard/assets/js/core/jquery-3.5.1.min.js"></script>
+		<script src="resources/lib/material-dashboard/assets/js/core/popper.min.js"></script>
+		<script src="resources/lib/material-dashboard/assets/js/core/bootstrap-material-design.min.js"></script>
+
+		<!-- Complemento para la barra de scroll, documentación: https://github.com/utatti/perfect-scrollbar -->
+		<script src="resources/lib/material-dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+
+		<!-- Complemento para el manejo de fechas en javascript, documentación: https://momentjs.com/docs -->
+  		<script src="resources/lib/material-dashboard/assets/js/plugins/moment.min.js"></script>
+
+  		<!-- Traducción al español del complemento de manejo de fechas -->
+  		<script src="resources/js/moment/language-es-do.js"></script>
+
+  		<!-- Complemento para el manejo de popups personalizados, documentación: https://sweetalert2.github.io -->
+  		<script src="resources/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+	
+		<!-- Complemento para dar apoyo a los navegadores que no soporten las promesas de manera nativa, documentación: https://www.npmjs.com/package/promise-polyfill -->
+		<script src="resources/lib/promise-polyfill/dist/polyfill.min.js"></script>
+
+		
+		<!-- Inicialización del core de Bootstrap y Material Dashboard -->
+		<script src="resources/lib/material-dashboard/assets/js/material-dashboard.js"></script>
+
+		<!-- Angularjs, documentación: https://docs.angularjs.org/api -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		
+		<!-- Complemento de angularjs para el manejo de las rutas, documentación: https://ui-router.github.io/ng1 -->
+	    <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+
+		
+
+  	<script src="main.js"></script>
+
+	  
+
+	<script>
+		$(document).ready(function() {
+		  $().ready(function() {
+			$sidebar = $('.sidebar');
+	
+			$sidebar_img_container = $sidebar.find('.sidebar-background');
+	
+			$full_page = $('.full-page');
+	
+			$sidebar_responsive = $('body > .navbar-collapse');
+	
+			window_width = $(window).width();
+	
+			fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+	
+			if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+			  if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+				$('.fixed-plugin .dropdown').addClass('open');
+			  }
+	
+			}
+		   
+		});
+	  });
+  </script>
+</body>
+</html>

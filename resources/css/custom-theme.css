@@ -1,0 +1,1362 @@
+#buttonTop {
+	display: inline-block;	
+	background-color: rgba(90, 90, 90, 0.384);
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#buttonTop::after {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+    -webkit-font-smoothing: antialiased;
+	text-rendering: auto;
+	font-style: normal;
+	content: "\f077";
+	font-size: 1em;
+	line-height: 30px;
+	color: #fff;
+}
+
+#buttonTop:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+
+#buttonTop:active {
+	background-color: #555;
+}
+
+#buttonTop.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.login-page {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+	background-image: linear-gradient(to right,#2071B7, #2B3383) !important;
+	/* background-image: url(../img/brands/BG_login_zentir.jpg) !important;*/
+}
+
+.custom-header-menu {
+	margin-top: 12px;
+    margin-left: -15px;
+    background: url(../img/brands/jarvis_kartero.png);
+    background-size: 158px;
+    height: 82px;
+    width: 260px;
+    -webkit-animation: fadeIn 0.8s;
+    -moz-animation: fadeIn 0.8s;
+    -ms-animation: fadeIn 0.8s;
+    -o-animation: fadeIn 0.8s;
+    animation: fadeIn 0.8s;
+    background-repeat: no-repeat;
+    background-position-x: 49px;
+    background-position-y: -1px;
+}
+
+body.no-menu .custom-container {
+	width: 100% !important;
+}
+
+.custom-transparent-card .card{
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.custom-transparent-card .card-header{
+	margin: 0 !important;
+}
+
+.custom-transparent-card .card{
+	margin: 0 !important;
+}
+
+.cursor-not-allowed {
+	cursor: not-allowed !important;
+}
+
+.td-nowrap {
+	max-width: 330px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.custom-header-menu-condensed {
+	margin-left: -15px;
+	transition: all 0.3s;
+	display: none;
+	background: url(../img/general/jarvis_identidad1.png);
+	background-size: 70px !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70px;
+	width: 260px !important;
+	-webkit-animation: fadeInRight 0.3s;
+ /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeInRight 0.3s;
+ /* Firefox < 16 */
+	-ms-animation: fadeInRight 0.3s;
+ /* Internet Explorer */
+	-o-animation: fadeInRight 0.3s;
+ /* Opera < 12.1 */
+	animation: fadeInRight 0.3s;
+}
+
+.navbar {
+	border-radius: 0px !important;
+}
+
+.noMenu div.sidebar {
+	display: none;
+}
+
+.noMenu div.main-panel {
+	width: 100% !important;
+}
+
+.custom-navbar {
+	z-index: 1000;
+    position: fixed !important;
+    width: 100%;
+    right: 0;
+}
+
+.container-over-navbar {
+	z-index: 1001;
+}
+
+.custom-navbar-toggler {
+	z-index: 10000;
+	border-color: transparent !important;
+}
+
+.custom-navbar-toggler span.navbar-toggler-icon {
+	background-color: #fff !important;
+}
+
+.menu .custom-container {
+	float: right;
+	width: calc(100% - 246px) !important;
+	transition: all 0.5s;
+}
+
+.menu .custom-container > nav {
+	margin-left: 302px;
+}
+
+.custom-header-menu {
+	display: block !important;
+}
+
+div.sidebar {
+	overflow: hidden;
+	z-index: 100;
+}
+
+div.sidebar .logo {
+	padding: 0px !important;
+	height: 70px !important;
+}
+
+.sidebar .logo:after {
+	background-color: initial;
+}
+
+.sidebar .nav li:first-child > a {
+	margin: 10px 15px 0;
+}
+
+div.sidebar .nav i {
+	color: rgb(39, 38, 38) !important;
+  -webkit-text-fill-color: white !important; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.7px !important;
+  -webkit-text-stroke-color:rgb(100, 100, 100) !important;
+}
+
+div.sidebar .nav p {
+	text-shadow: rgb(105, 105, 105) 1px 0px 0px, rgb(105, 105, 105) 0.540302px 0.841471px 0px, rgb(105, 105, 105) -0.416147px 0.909297px 0px, rgb(105, 105, 105) -0.989992px 0.14112px 0px, rgb(105, 105, 105) -0.653644px -0.756802px 0px, rgb(105, 105, 105) 0.283662px -0.958924px 0px, rgb(105, 105, 105) 0.96017px -0.279415px 0px;
+}
+
+div.sidebar .nav li a {
+	overflow: hidden;
+	padding: 0.5rem 0.6rem !important;
+}
+
+div.sidebar .nav li a {
+	transition: all 0.3s;
+	width: 230px !important;
+}
+
+div.sidebar .nav-link a {
+	margin: 0 15px;
+}
+
+div.sidebar .nav .sub-nav-link a {
+	margin: 5px 30px 0px;
+	width: 215px !important;
+	padding: 0.2rem 0.6rem !important;
+}
+
+div.sidebar .sub-nav-link.active a {
+	color: #fff !important;
+	background-color: rgba(100, 100, 100, 0.5) !important;
+}
+
+div.sidebar .sub-nav-link.active i {
+	color: #fff !important;
+}
+
+.menu-option-icon {
+	transition: all 0.3s;
+	font-size: 18px !important;
+	position: absolute !important;
+	right: -20px !important;
+}
+
+/**
+* Solución al tooltip infinito, documentación: https://github.com/valor-software/ngx-bootstrap/issues/3075
+*/
+.tooltip {
+	pointer-events: none;
+}
+
+/**
+* Solución problema de posicionamiento del tooltip, documentación: https://github.com/FezVrasta/popper.js/issues/457
+*/
+.tooltip {
+	top: 0;
+}
+
+/**
+* Solución problema del selectpicker por debajo de los botones
+*/
+.swal2-actions {
+	z-index: 0 !important;
+}
+
+.back-configuration-button {
+	margin-top: 12px;
+	position: absolute !important;
+	left: 25px;
+	transition: all 0.3s;
+}
+
+.custom-radio-position-center {
+	position: relative;
+    top: -8px;
+    left: -12px;
+}
+
+.icon-16 {
+	height: 16px;
+	width: 16px;
+}
+
+.responsive-option	{
+	display: none;
+}
+
+/**
+* Ajustes del responsive
+*/
+@media only screen and (max-width: 991px) {
+
+	.icon-menu {
+		display: none;
+	}
+
+	.sidebar .nav li a, .sidebar .nav li .dropdown-menu a {
+		color: #fff !important;
+	}
+
+	.sidebar .logo .simple-text {
+		color: #fff !important;
+	}
+
+	.noMenu div.sidebar {
+		display: block;
+	}
+
+	.back-configuration-button {
+		top: 2px;
+	}
+
+	.responsive-option	{
+		display: block;
+	}
+
+	.custom-header-menu {
+		margin: 0;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	body.menu-condensed .custom-header-menu-condensed {
+		display: block !important;
+		width: 80px !important;
+	}
+
+	body.menu-condensed .custom-container {
+		width: calc(100% - 80px) !important;
+	}
+
+	body.menu-condensed .custom-header-menu {
+		display: none !important;
+	}
+
+	body.menu-condensed .custom-header-menu-condesed {
+		display: block !important;
+	}
+
+	body.menu-condensed div.sidebar {
+		width: 80px !important;
+	}
+
+	body.menu-condensed div.sidebar p span {
+		opacity: 0;
+	}
+
+	body.menu-condensed div.sidebar .nav li a {
+		width: 50px !important;
+	}
+
+	body.menu-condensed .menu-option-icon {
+		position: absolute !important;
+	    right: -29px !important;
+	    margin-top: -12px;
+	    font-size: 14px !important;
+	}
+
+	body.menu-condensed div.sidebar .nav .sub-nav-link a {
+		margin: 5px 15px 0px;
+	}
+}
+
+@keyframes background-fade {
+	0% {
+		background: rgba(0, 0, 0, 0);
+	}
+
+	25% {
+		background: rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		background: rgba(0, 0, 0, 0.35);
+	}
+}
+
+.custom-small-text {
+	font-size: 15px !important;
+}
+
+.sidebar {
+	-webkit-animation: fadeIn 0.8s;
+ /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeIn 0.8s;
+ /* Firefox < 16 */
+	-ms-animation: fadeIn 0.8s;
+ /* Internet Explorer */
+	-o-animation: fadeIn 0.8s;
+ /* Opera < 12.1 */
+	animation: fadeIn 0.8s;
+}
+
+.fast-animation {
+	-webkit-animation-duration: 0.7s !important;
+	animation-duration: 0.7s !important;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.custom-navbar ul.navbar-nav {
+	width: 95%!important;
+}
+
+.custom-navbar li {
+	min-width: 40px;
+	text-align: center;
+}
+
+.custom-navbar i {
+	font-size: 1.75rem !important;
+	max-width: none !important;
+}
+
+.custom-navbar a.navbar-brand {
+	font-size: 2.25rem !important;
+}
+
+.custom-nav-pills li{
+	width: 120px;
+	margin: 10px 15px 10px 15px;
+	border-radius: 3px;
+	box-shadow: 0 1px 1.5px 1px rgba(0,0,0,.12);
+}
+
+.custom-nav-pills li:hover{
+	background-color: rgba(0,0,0, 0.1);
+	box-shadow: 0 4px 23px 0px rgba(0, 0, 0, 0.12);
+}
+
+.custom-nav-pills li a{
+	padding: 10px 5px 15px 5px !important;
+	background-color: #fff;
+}
+
+.custom-nav-pills li a i{
+	font-size: 30px;
+	margin: 5px 0px 5px 0px !important;
+}
+
+.custom-nav-pills li a p{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.custom-content {
+	margin-top: 90px;
+	padding: 0px 15px;
+	min-height: 80vh;
+}
+
+.right-left-padding {
+	padding: 0px 20px;
+}
+
+.custom-btn-small {
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+
+.custom-btn-space {
+	margin-left: 2px !important;
+	margin-right: 2px !important;
+}
+
+.custom-btn-swal {
+	min-width: 100px !important;
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+
+.custom-state-icon {
+    border: solid !important;
+    border-width: 3px !important;
+    border-radius: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 22px !important;
+    line-height: 26px !important;
+}
+
+/**
+* Clase custom para los card con barra de progreso
+*/
+.custom-card-progress {
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-webkit-touch-callout: none;
+ /* iOS Safari */
+	-webkit-user-select: none;
+ /* Safari */
+	-khtml-user-select: none;
+ /* Konqueror HTML */
+	-moz-user-select: none;
+ /* Firefox */
+	-ms-user-select: none;
+ /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+.custom-card-progress::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: inherit;
+	-webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.custom-card-progress:hover {
+	-webkit-transform: scale(1.05, 1.05);
+	transform: scale(1.05, 1.05);
+}
+
+.custom-card-progress:hover::after {
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+	-moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+	opacity: 1;
+	transition: all 0.7s;
+}
+
+.custom-card-progress > div.row {
+	padding-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.custom-card-div-progress > div {
+	padding-bottom: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.custom-card-progress strong {
+	margin-right: 5px;
+	margin-left: 10px;
+	position: relative;
+	top: -6px;
+	color: #495057;
+}
+
+.custom-card-progress b {
+	font-size: 20px;
+	font-weight: 900;
+	position: relative;
+	top: -6px;
+}
+
+.custom-card-progress-icon {
+	color: white !important;
+	border-radius: 50% !important;
+	width: 36px !important;
+	height: 36px !important;
+	font-size: 25px !important;
+	line-height: 37px !important;
+}
+
+.custom-col-small {
+	height: 100px;
+}
+
+.custom-row-small {
+	position: relative;
+	top: -28px;
+}
+
+.card-options {
+	position: absolute;
+    right: 0;
+    top: 27px;
+    margin-right: 5px;
+}
+
+.custom-card-header-button {
+	margin-left: 0 !important;
+    margin-right: 5px !important;
+}
+
+/**
+* Configuracíón del datatable
+*/
+/*!
+ * DataTables + Font Awesome integration
+ * License: MIT - http://datatables.net/license
+ */
+ 
+/*
+ * Sort styling
+ */
+ table.dataTable thead th {
+    position: relative;
+    background-image: none !important; /* Remove the DataTables bootstrap integration styling */
+}
+ 
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+}
+ 
+table.dataTable thead th.sorting:after {
+  font-weight: 900; /* regular style/weight */
+    content: "\f0dc";
+    color: #ddd;
+    font-size: 0.8em;
+    padding-top: 0.12em;
+}
+
+table.dataTable thead th.sorting_asc:after {
+  font-weight: 900; /* regular style/weight */
+    content: "\f0de";
+}
+
+table.dataTable thead th.sorting_desc:after {
+  font-weight: 900; /* regular style/weight */
+    content: "\f0dd";
+}
+ 
+div.dataTables_scrollBody table.dataTable thead th.sorting:after,
+div.dataTables_scrollBody table.dataTable thead th.sorting_asc:after,
+div.dataTables_scrollBody table.dataTable thead th.sorting_desc:after {
+    content: "";
+}
+ 
+/* In Bootstrap and Foundation the padding top is a little different from the DataTables stylesheet */
+table.table thead th.sorting:after,
+table.table thead th.sorting_asc:after,
+table.table thead th.sorting_desc:after {
+    top: 8px;
+}
+ 
+ 
+/*
+ * DataTables style pagination controls
+ */
+/* div.dataTables_paginate a.paginate_button.first,
+div.dataTables_paginate a.paginate_button.previous {
+    position: relative;
+    padding-left: 24px;
+}
+ 
+div.dataTables_paginate a.paginate_button.next,
+div.dataTables_paginate a.paginate_button.last {
+    position: relative;
+    padding-right: 24px;
+}
+ 
+div.dataTables_paginate a.first:before,
+div.dataTables_paginate a.previous:before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+}
+ 
+div.dataTables_paginate a.next:after,
+div.dataTables_paginate a.last:after {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+}
+ 
+div.dataTables_paginate a.first:before {
+  font-weight: 900;
+    content: "\f100";
+}
+ 
+div.dataTables_paginate a.previous:before {
+  font-weight: 900;
+    content: "\f104";
+}
+ 
+div.dataTables_paginate a.next:after {
+  font-weight: 900;
+    content: "\f105";
+}
+ 
+div.dataTables_paginate a.last:after {
+  font-weight: 900;
+    content: "\f101";
+}
+  */
+ 
+/*
+ * Bootstrap and foundation style pagination controls
+ */
+div.dataTables_paginate li.first > a,
+div.dataTables_paginate li.previous > a {
+    position: relative;
+    padding-left: 24px;
+}
+ 
+div.dataTables_paginate li.next > a,
+div.dataTables_paginate li.last > a {
+    position: relative;
+    padding-right: 24px;
+}
+ 
+div.dataTables_paginate li.first a:before,
+div.dataTables_paginate li.previous a:before {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+}
+ 
+div.dataTables_paginate li.next a:after,
+div.dataTables_paginate li.last a:after {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+}
+ 
+div.dataTables_paginate li.first a:before {
+  font-weight: 900; /* regular style/weight */
+    content: "\f100";
+}
+ 
+div.dataTables_paginate li.previous a:before {
+  font-weight: 900; /* regular style/weight */
+    content: "\f104";
+}
+ 
+div.dataTables_paginate li.next a:after {
+  font-weight: 900; /* regular style/weight */
+    content: "\f105";
+}
+ 
+div.dataTables_paginate li.last a:after {
+  font-weight: 900; /* regular style/weight */
+    content: "\f101";
+}
+ 
+/* In Foundation we don't want the padding like in bootstrap */
+div.columns div.dataTables_paginate li.first a:before,
+div.columns div.dataTables_paginate li.previous a:before,
+div.columns div.dataTables_paginate li.next a:after,
+div.columns div.dataTables_paginate li.last a:after {
+    top: 0;
+}
+
+/**
+* Complemento para el datetimepicker side by side
+*/
+.timepicker-sbs .timepicker .timepicker-picker {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.timepicker-sbs .timepicker .timepicker-picker .separator {
+	width: 50px;
+}
+
+
+/**
+* Alineamiento del input "checkbox" toggle
+*/
+.custom-toggle:before {
+	top: 6px !important;
+}
+
+.custom-toggle span {
+	top: 3px !important;
+}
+
+/**
+* Scrollbar personalizado para chrome
+*/
+
+/* width */
+::-webkit-scrollbar {
+	background: #f1f1f1;
+	width: 16px;
+}
+
+/* background para el fondo del scrollbar */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* scrollbar */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 16px;
+	border: 4px solid #f1f1f1;
+}
+
+/* scrollbar hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* ocultar los botones del scrollbar */
+::-webkit-scrollbar-button {
+	display: none;
+}
+
+/**
+* Configuración del fullcalendar
+*/
+.fc-list-view {
+	border-width: 0px !important;
+}
+
+.fc .fc-toolbar>*>* {
+	float: unset !important;
+}
+
+/*Configuración Loading*/
+.contenedor_carga {
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	-webkit-webkit-transition: all 1s ease;
+	-moz-webkit-transition: all 1s ease;
+	-ms-webkit-transition: all 1s ease;
+	-o-webkit-transition: all 1s ease;
+	webkit-transition: all 1s ease;
+	z-index: 10000;
+}
+
+#circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 150px;
+	height: 150px;
+}
+
+.loader {
+	width: calc(100% - 0px);
+	height: calc(100% - 0px);
+	border: 8px solid #162534;
+	border-top: 8px solid #09f;
+	border-radius: 50%;
+	animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/* ---- particles.js container ---- */
+#particles-js {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(44, 46, 67);
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+/*search*/
+.search-jarvis {
+	position: absolute;
+	top: 50%;
+	left: 53%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+	height: 500px;
+	background: rgba(0,0,0,0);
+	box-shadow: 0 5px 20px rgba(0,0,0,0);
+	border-radius: 4px;
+	transition: width .5s;
+	overflow: hidden;
+}
+
+.search-jarvis input {
+	position: absolute;
+	width: calc(100% - 100px);
+	height: 30px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	padding: 0 10px;
+	color: #666;
+	border-radius: 25px;
+}
+
+.imgHome {
+	text-align: center;
+	color: #ffffff;
+}
+
+/*Animación botón Login*/
+.pulse-button {
+	position: relative;
+	box-shadow: 0 0 0 0 rgba(130, 130, 130, 0.9);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	-webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.pulse-button:hover {
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	animation: none;
+}
+
+@-webkit-keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(130, 130, 130, 0);
+	}
+}
+
+@-moz-keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(130, 130, 130, 0);
+	}
+}
+
+@keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(130, 130, 130, 0);
+	}
+}
+
+
+.container-help-panel{
+	position: absolute;;
+}
+
+.container-help-panel .item-help{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	border-radius: 0px !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .10), 0 3px 1px -2px rgba(0, 0, 0, .15), 0 1px 5px 0 rgba(0, 0, 0, .10) !important;
+	border-left : 2px solid transparent;
+	transition: all 0.5s;
+}
+
+.container-help-panel .item-help:hover{
+	border-left : 2px solid #1e124f !important;
+}
+
+.container-help-panel .item-help .fa{
+	margin-top: 4px;
+	display: none;
+}
+
+.container-help-panel .item-help:hover .fa{
+	display: block;
+}
+
+.nav-pills-round li a{
+	
+	line-height: 24px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500 !important;
+	min-width: 100px !important;
+	text-align: center !important;
+	color: #555 !important;
+	transition: all .3s !important;
+	border-radius: 30px !important;
+	padding: 12px 17px !important;
+  }
+ 
+  .nav-pills-round > li{
+	  margin: 0px 5px;
+  }
+  .nav-pills-round li a.active{
+	color: #fff !important;
+   box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(171, 171, 171, 0.6) !important;
+  }
+  
+  .nav-pills-primary a.active{
+	background-color: #1e124f !important;
+	border-color: #1e124f !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 40, 85, 0.14), 0 3px 1px -2px rgba(0, 40, 85, 0.2), 0 1px 5px 0 rgba(0, 40, 85, 0.12) !important;
+  }
+  
+  .nav-pills-success a.active{
+	background-color: #4caf50 !important;
+	border-color: #4caf50 !important;
+	box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12) !important;
+  }
+  .nav-pills-warning a.active{
+	background-color: #ff9800 !important;
+	border-color: #ff9800 !important;
+	box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14), 0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12) !important;
+  }
+  .nav-pills-danger a.active{
+	background-color: #f44336 !important;
+	border-color: #f44336 !important;
+	box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12) !important;
+  }
+	
+  
+.table .nofilter{
+	padding: 7px 11px 0px 5px !important;
+    vertical-align: initial;
+}
+
+.table input.input-header{
+	width: 100%;
+	font-size: 13px !important;
+	border-radius: 4px;
+	border: 1px solid #d0d0d0;
+	padding: 0px 3px;
+}
+
+.deshabilitar-global *{
+	cursor: not-allowed !important;
+}
+
+.daterangepicker.dropdown-menu{
+	opacity : 1 !important;
+	transform: scale(1) !important;
+}
+
+
+
+
+
+
+
+
+
+
+.lightrope {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1010 !important;
+    margin: -15px 0 0 0;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+    top: -16px !important;
+  }
+  .lightrope li {
+	position: relative;
+	-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 12px;
+	height: 28px;
+	border-radius: 50%;
+	margin: 20px;
+	display: inline-block;
+	background: #00f7a5;
+	box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+	-webkit-animation-name: flash-1;
+			animation-name: flash-1;
+	-webkit-animation-duration: 2s;
+			animation-duration: 2s;
+  }
+  .lightrope li:nth-child(2n+1) {
+	background: cyan;
+	box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.5);
+	-webkit-animation-name: flash-2;
+			animation-name: flash-2;
+	-webkit-animation-duration: 0.4s;
+			animation-duration: 0.4s;
+  }
+  .lightrope li:nth-child(4n+2) {
+	background: #f70094;
+	box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+	-webkit-animation-name: flash-3;
+			animation-name: flash-3;
+	-webkit-animation-duration: 1.1s;
+			animation-duration: 1.1s;
+  }
+  .lightrope li:nth-child(odd) {
+	-webkit-animation-duration: 1.8s;
+			animation-duration: 1.8s;
+  }
+  .lightrope li:nth-child(3n+1) {
+	-webkit-animation-duration: 1.4s;
+			animation-duration: 1.4s;
+  }
+  .lightrope li:before {
+	content: "";
+	position: absolute;
+	background: #222;
+	width: 10px;
+	height: 9.3333333333px;
+	border-radius: 3px;
+	top: -4.6666666667px;
+	left: 1px;
+  }
+  .lightrope li:after {
+	content: "";
+	top: -14px;
+	left: 9px;
+	position: absolute;
+	width: 52px;
+	height: 18.6666666667px;
+	border-bottom: solid #222 2px;
+	border-radius: 50%;
+  }
+  .lightrope li:last-child:after {
+	content: none;
+  }
+  .lightrope li:first-child {
+	margin-left: -40px;
+  }
+  
+  @-webkit-keyframes flash-1 {
+	0%, 100% {
+	  background: #00f7a5;
+	  box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+	}
+	50% {
+	  background: rgba(0, 247, 165, 0.4);
+	  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+	}
+  }
+  
+  @keyframes flash-1 {
+	0%, 100% {
+	  background: #00f7a5;
+	  box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+	}
+	50% {
+	  background: rgba(0, 247, 165, 0.4);
+	  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+	}
+  }
+  @-webkit-keyframes flash-2 {
+	0%, 100% {
+	  background: cyan;
+	  box-shadow: 0px 4.6666666667px 24px 3px cyan;
+	}
+	50% {
+	  background: rgba(0, 255, 255, 0.4);
+	  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+	}
+  }
+  @keyframes flash-2 {
+	0%, 100% {
+	  background: cyan;
+	  box-shadow: 0px 4.6666666667px 24px 3px cyan;
+	}
+	50% {
+	  background: rgba(0, 255, 255, 0.4);
+	  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+	}
+  }
+  @-webkit-keyframes flash-3 {
+	0%, 100% {
+	  background: #f70094;
+	  box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+	}
+	50% {
+	  background: rgba(247, 0, 148, 0.4);
+	  box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+	}
+  }
+  @keyframes flash-3 {
+	0%, 100% {
+	  background: #f70094;
+	  box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+	}
+	50% {
+	  background: rgba(247, 0, 148, 0.4);
+	  box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+	}
+  }
+  
+
+#modal_container_chat{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1001;
+}
+
+#modal_container_chat #container_chat{
+	width: 90%;
+    margin: auto;
+    display: block;
+    height: 90%;
+    margin-top: 30px;
+}
+
+.rockechat-unload{
+	visibility: hidden;
+	z-index: -1;
+}
+
+.rocketchat-close{
+	display: none;
+}
+.rocketchat-open{
+ display: block !important;	
+}
+.btn-close-chat{
+	z-index: 10000 !important;
+    position: fixed !important;
+    right: 6px !important;
+    top: 2px !important;
+}
+.btn-toggle-chat{
+	position: fixed !important;
+    z-index: 100 !important;
+    bottom: 0px !important;
+    right: 0px !important;
+}
+.menudist{
+	margin-left: 50px !important;
+}
+.e-fieldlist-left{
+	display: none !important;
+}
+#GridSupuestosEco .e-headertext,#GridDimOpe .e-headertext{
+    color: #3c4858;
+    font-weight: bold;
+    font-size: 15px;
+}
+#GridDimOpe .e-headertext{
+	font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont"
+}
+
+
+#box-button{
+	width:45px;
+	height:45px;
+	background-color:#f8f8f8;
+	margin: 10px;
+	padding:5px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size:30px;
+	line-height:32px;
+	text-transform: uppercase;
+	float:left;
+	
+  }
+  
+  #box-button i{
+   color:#445886;
+  }
+  #box-button i:hover{
+   color:#f8f8f8 !important;
+   
+  }
+  
+  #box-button:hover{
+   
+	background-color:#f8f8f8;
+	color:#f8f8f8 !important;
+	
+	transform: scale(1.1); 
+   animation: beat .25s infinite alternate;
+	transform-origin: center;
+	cursor:pointer;
+	transition: all 0.5s;
+	-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  }
+  #box-button a{
+	color:#f8f8f8 !important;
+	text-decoration:none;
+	padding:5px 5px 5px 0;
+  }
+  
+  .gradient-border {
+	--borderWidth: 3px;
+	background: #1D1F20;
+	position: relative;
+	border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+	content: '';
+	position: absolute;
+	top: calc(-1 * var(--borderWidth));
+	left: calc(-1 * var(--borderWidth));
+	height: calc(100% + var(--borderWidth) * 2);
+	width: calc(100% + var(--borderWidth) * 2);
+	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	border-radius: calc(8 * var(--borderWidth));
+	z-index: -1;
+	animation: animatedgradient 3s ease alternate infinite;
+	background-size: 300% 300%;
+  }
+
+  @keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.icon-button{
+	float:left!important; 
+	margin-top: -6px !important;
+	margin-left: -6px !important;
+}
+
+.icon-button-tabla{
+	font-size: 18px;
+    margin-top: 5px !important;
+    margin-left: 5px !important;
+    float: left;
+}
+
+.icon-button-tabla-dos{
+	font-size: 18px;
+    margin-top: 5px !important;
+    margin-left: 8px !important;
+    float: left;
+}
+
+.icon-button-tabla-tres{
+	font-size: 18px;
+    margin-top: 5px !important;
+    margin-left: 6px !important;
+    float: left;
+}
+
+.icon-button-table-cuatro{
+    margin-top: 3px !important;
+    margin-left: 7px !important;
+    float: left;
+}
+
+
+#title-header-modal{
+    color:rgba(51, 51, 51, 0.89);
+     font-size: 42px;
+}
+  

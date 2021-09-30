@@ -1,0 +1,68 @@
+
+<div class="row">
+	<div class="col-md-12">
+	  <div class="card">
+		<div class="card-header card-header-warning">
+		  <h4 class="card-title">Filtro</h4>		 
+		</div>
+		<div class="card-body">
+		  <form>
+			<div class="row">			  
+			  <div class="col-md-4">
+				<div class="form-group bmd-form-group">
+				  <input type="text" ng-model="searchtxt.title" class="form-control" placeholder="Title">
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="form-group bmd-form-group">
+				  <input type="email" ng-model="searchtxt.id" class="form-control" placeholder="Id">
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="form-group bmd-form-group">
+				  <input type="email" ng-model="searchtxt.userId" class="form-control" placeholder="UserID">
+				</div>
+			  </div>
+			  
+			</div>
+			<div class="clearfix"></div>
+		  </form>
+		</div>
+	  </div>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+	  <div class="card">
+		<div class="card-header card-header-primary">
+		  <h4 class="card-title ">Albunes</h4>
+		  <p class="card-category">Lista de albunes</p>
+		</div>
+		<div class="card-body">
+		  <div class="table-responsive">
+			<table class="table">
+				<thead class="text-primary">
+					<tr>
+						<th>Id</th>
+		  				<th>Album</th>
+						<th>User ID</th>
+		  				<th>Imagen</th>
+			  		</tr>
+				</thead>
+			  <tbody>
+				<tr ng-repeat="user in albums | filter : searchtxt">
+					<td>{{user.id}}</td>
+					<td>{{user.title}}</td>
+					<td>{{user.userId}}</td>
+					<td><img src="{{user.photo}}"></td>				  
+				</tr>		
+			  </tbody>
+			</table>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+  </div>
+
