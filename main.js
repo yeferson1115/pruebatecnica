@@ -57,7 +57,11 @@ app.controller('postController', function($scope,$http) {
         headers: {'Content-type': 'application/json; charset=UTF-8'}
     }).then(function (r) {
 		console.log(r);
-		alert('Registro guardado correctamente');
+		Swal.fire({
+			icon: 'info',
+			title: 'Muy bien!',
+			text: 'Post guardado corectamente',
+		  })
           
     });	
       
